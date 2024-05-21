@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Apps</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <a href="#restaurantList" class="skip-link">Skip to Content</a>
+    <!-- Navigation Bar -->
+    <header>
+      <nav class="navbar" role="navigation">
+        <a href="#" class="navbar-brand">Ngopi Kuy</a>
+        <button
+          class="navbar-toggle"
+          onclick="toggleNavbar()"
+          aria-label="Toggle Navigation"
+        >
+          &#9776;
+        </button>
+        <ul class="navbar-menu" id="navbarMenu" role="menubar">
+          <li><a href="/" role="menuitem">Home</a></li>
+          <li><a href="#" role="menuitem">Favorite</a></li>
+          <li>
+            <a href="https://github.com/RegaAG" role="menuitem">About Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" tabindex="-1">
+      <div class="jumbotron" role="region" aria-label="Hero Section">
+        <img
+          src="images/heros/hero-image_4.jpg"
+          alt="Hero Image"
+          role="img"
+          aria-label="Hero Image"
+        />
+      </div>
+
+      <div class="container" role="main" aria-label="Restaurant List">
+        <div class="card-container" id="restaurantList" role="list">
+          <!-- Cards will be dynamically added here -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 - Ngopi Kuy</p>
+        <p>Created with ❤️ Rega</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts/index.js"></script>
+    <script>
+      function toggleNavbar() {
+        const navbarMenu = document.getElementById("navbarMenu");
+        navbarMenu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
